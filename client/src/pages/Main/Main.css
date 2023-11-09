@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+.main-page-img-container{
+    height: 450px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: inset  0 0 1000px rgba(0, 0, 0, 0.822);
+    position: relative;
+}
+.main-page-title{
+    text-align: center;
+    position: absolute;
+    bottom: 20%;
+
+    font-family: 'Cinzel', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    color: rgb(216, 162, 24);
+    text-shadow: 0 0 0.8em rgb(0, 0, 0);
+}
+.main-page-subtitle{
+    text-align: center;
+}

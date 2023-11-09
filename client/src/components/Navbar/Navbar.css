@@ -1,0 +1,136 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100px;
+    min-width: 100vw;
+
+    background-color: rgb(8, 18, 31);
+    box-shadow: 0px 0px 140px 130px rgb(8, 18, 31);
+
+    padding: 15px 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}   
+.nav-logo{
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.603);
+}
+.purple{
+    color: rgba(77, 102, 241, 0.918);
+    text-shadow: 0px 0px 5px rgb(70, 57, 255);
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.unactive, .unactive:link,.unactive:visited{  
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 80px;
+    height: 40px;
+    color: white;
+}
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 80px;
+    height: 40px;
+    background-color: rgba(154, 193, 236, 0.253);
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgba(25, 116, 253, 0.993);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu .li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+.menu .li:hover {
+    color: rgba(25, 116, 253, 0.993);
+}
+.menu .li:active {
+    color: rgba(25, 116, 253, 0.993);
+}
+
+@media (max-width: 767px) {
+    .navbar{
+        background-color: rgba(255, 255, 255, 0);
+        bottom: 0;
+        padding: 0;
+        height: 0;
+    }
+    .menu {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+
+        height: 100vh;
+        width: 100vw;
+        background: rgba(43, 43, 43, 0.877);
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .burger-menu-container{
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background: rgba(88, 88, 88, 0.966);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+
+        width: max-content;
+        padding: 10px;
+
+        z-index: 999;
+    }
+    .nav-logo-mobile{
+        font-size:1.5em;
+        margin-bottom: 10px;
+        font-weight: 700;
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.603);
+    }
+    .nav-logo{
+        display: none;
+    }
+    .active{
+        border-radius: 0%;
+    }
+
+    .menu .li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+    }
+    .menu .li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+}
+

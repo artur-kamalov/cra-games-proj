@@ -1,0 +1,83 @@
+.admin-panel{
+    margin-top: 20px;
+}
+.add-game-forms{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(clamp(calc(((200px + 50vw ) * 2 ) - 100vw ), 35vw, 100% )  ,1fr));
+    padding: 10px;
+    gap:1em;
+    width:100%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0 1.5em;
+    height: 100%;
+    width: 100%;
+    border: 2.5px rgba(151, 147, 147, 0.247) solid;
+    border-radius: 1em;
+    margin: 0 auto;
+    padding: 15px 10px;
+}
+.form-title{
+    margin-bottom: 3vh;
+}
+.form-field{
+    display: flex;
+    justify-content: space-between;
+    gap: 0 1.5em;
+}
+.form-input{
+    height: max-content;
+    border: 2px #26489a solid;
+    border-radius: 1em;
+    box-shadow: 0 0 0.8em #26489a;
+    transition: .3s;
+    padding: 0.5em;
+    width: 100%;
+}
+.notification-succes--container{
+    top: -33%;
+    background: none;
+}
+
+.notification-succes--content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    padding: 6px;
+    font-size: 18px;
+    background-color: rgb(94, 214, 78);
+}
+
+.input-alert{
+    color: rgb(250, 72, 72)
+}
+
+/* Madium screen */
+
+@media (max-width: 767px) {
+
+}
+
+/* Small screen */
+
+@media (max-width: 576px) {
+    .add-game-forms{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-container{
+        width: 80vw;
+        margin: 0 auto;
+        overflow-x: hidden !important;
+    }
+    .form-field{
+        flex-direction: column;
+        gap: 10px 0;
+    }
+}
